@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Prueba del titulo del proyecto by noeliamansog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Prueba del titulo del proyecto</h1>
+      <h2 class="project-tagline">Esto es una prueba que tal tal tal tal tal </h2>
+      <a href="https://github.com/noeliamansog/Prueba" class="btn">View on GitHub</a>
+      <a href="https://github.com/noeliamansog/Prueba/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/noeliamansog/Prueba/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+
+<p>&lt;!DOCTYPE html&gt;
+
+  </p>
+    
+    
+    
+    
+    
+    
+    
+
+<pre><code>&lt;!--[if lt IE 9]&gt;
+&lt;script src="//html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+
+&lt;title&gt;PLQuiz by RobertoIA&lt;/title&gt;
+</code></pre>
+
+<p></p>
+
+<p></p>
+     
+      <div>
+        <h1>
+<a id="plquiz" class="anchor" href="#plquiz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PLQuiz</h1>
+        <h2>
+<a id="trabajo-fin-de-grado---ingeniería-informática" class="anchor" href="#trabajo-fin-de-grado---ingenier%C3%ADa-inform%C3%A1tica" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Trabajo fin de grado - Ingeniería Informática</h2>
+        <a href="https://github.com/RobertoIA/PLQuiz">Ver proyecto en GitHub</a>
+      </div>
+     
+
+<pre><code>&lt;div id="content-wrapper"&gt;
+  &lt;div class="inner clearfix"&gt;
+    &lt;section id="main-content"&gt;
+      &lt;h3&gt;
+</code></pre>
+
+<p><a name="resumen-del-proyecto" href="#resumen-del-proyecto"></a>Resumen del proyecto</p>
+
+<p>PLQuiz es una aplicación que permite generar cuestionarios sobre el uso de algoritmos de análisis léxico.
+Los cuestionarios se presentan en formato compatible con Moodle o preparados para imprimir, incluyendo imágenes de alta resolución utilizando gráficos vectoriales.
+Los ejercicios pueden generarse a partir de una expresión regular dada o de manera automática, utilizando algoritmos de búsqueda aleatoria y genéticos.</p>
+
+<h3>
+<a id="algoritmo-de-aho-sehi-ullman" class="anchor" href="#algoritmo-de-aho-sehi-ullman" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+<a name="algoritmo-de-aho-sehi-ullman" href="#algoritmo-de-aho-sehi-ullman"></a>Algoritmo de Aho-Sehi-Ullman</h3>
+
+<p>Calcula una serie de funciones a partir del árbol sintáctico de la expresión regular, utilizándolas para generar la tabla de transición del autómata.
+Las funciones calculadas son:</p>
+
+<ul>
+<li>Primera-pos: conjunto de posiciones que corresponden con los primeros símbolos posibles en las cadenas que define.</li>
+<li>Última-pos: conjunto de posiciones que corresponden con los últimos símbolos.</li>
+<li>Siguiente-pos: conjunto de posiciones que siguen a una posición dada en la expresión. </li>
+</ul><h3>
+<a id="algoritmo-de-mcnaughton-yamada-thompson" class="anchor" href="#algoritmo-de-mcnaughton-yamada-thompson" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+<a name="algoritmo-de-mcnaughton-yamada-thompson" href="#algoritmo-de-mcnaughton-yamada-thompson"></a>Algoritmo de McNaughton-Yamada-Thompson</h3>
+
+<p>Utiliza una expresión regular para obtener un autómata finito determinista que define el mismo lenguaje.
+Para construir el autómata recorremos el árbol sintáctico de la expresión recursivamente, construyendo el autómata correspondiente a cada nodo a partir de los autómatas de los nodos inferiores.</p>
+
+<h3>
+<a id="generación-de-cuestiones" class="anchor" href="#generaci%C3%B3n-de-cuestiones" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+<a name="generaci%C3%B3n-de-cuestiones" href="#generaci%C3%B3n-de-cuestiones"></a>Generación de cuestiones</h3>
+
+<p>La aplicación utiliza algoritmos de búsqueda para generar expresiones regulares que correspondan con un problema de un tipo y características dadas. Las características que determinan el problema a generar son:</p>
+
+<ul>
+<li>Si contiene o no la cadena vacía.</li>
+<li>El número de símbolos diferentes que contiene.</li>
+<li>El número de estados en su tabla de transición correspondiente.</li>
+</ul><p>Los problemas de resolución de problemas del algoritmo de Aho-Sethi-Ullman utilizan un algoritmo de búsqueda aleatoria, los de McNaughton-Yamada-Thompson un algoritmo genético.</p>
+
+<h3>
+<a id="cuestionarios" class="anchor" href="#cuestionarios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+<a name="cuestionarios" href="#cuestionarios"></a>Cuestionarios</h3>
+
+<p>La aplicación genera cuestionarios en tres posibles formatos:</p>
+
+<ul>
+<li>HTML + CSS, utilizado dentro de la propia aplicación para mostrar una vista previa del cuestionario.</li>
+<li>Latex, utilizado para generar cuestionarios que puedan imprimirse en papel, como exámenes.</li>
+<li>Moodle XML, utilizado para generar cuestiones que pueden importarse en la plataforma de aprendizaje virtual.</li>
+</ul><p>y imágenes en otros tres formatos distintos:</p>
+
+<ul>
+<li>Formato de fichero de imagen común, generado al exportar documentos Latex por defecto.</li>
+<li>Formato de programa dot compatible con <a href="http://www.graphviz.org/">Graphviz</a>, generado al exportar documentos Latex de manera alternativa.</li>
+<li>Formato de cadena de texto de 64 bits, que permite codificar la imagen dentro de documentos XML.</li>
+</ul>
+
+<pre><code>    &lt;/section&gt;
+
+    &lt;aside id="sidebar"&gt;
+      &lt;a href="https://www.dropbox.com/s/ny4l0izeqvppvks/PLQuiz.pdf" class="button"&gt;
+        &lt;small&gt;Descargar&lt;/small&gt;
+        memoria
+      &lt;/a&gt;
+
+      &lt;a href="https://www.dropbox.com/s/wye5b85b8j3c3pm/Poster.pdf" class="button"&gt;
+        &lt;small&gt;Descargar&lt;/small&gt;
+        póster
+      &lt;/a&gt;
+
+      &lt;a href="https://www.dropbox.com/s/wobw460a254nele/PLQuiz-0.0-PROTOTIPO.jar" class="button"&gt;
+        &lt;small&gt;Descargar&lt;/small&gt;
+        prototipo
+      &lt;/a&gt;
+
+      &lt;a href="https://github.com/RobertoIA/PLQuiz/releases" class="button"&gt;
+        &lt;small&gt;Descargar&lt;/small&gt;
+        aplicación
+      &lt;/a&gt;
+
+      &lt;a href="https://github.com/RobertoIA/PLQuiz/zipball/master" class="button"&gt;
+        &lt;small&gt;Descargar&lt;/small&gt;
+        repositorio
+      &lt;/a&gt;
+
+      &lt;p class="repo-owner"&gt;&lt;a href="https://github.com/RobertoIA/PLQuiz"&gt;PLQuiz&lt;/a&gt; está desarrollado por &lt;a href="https://github.com/RobertoIA"&gt;Roberto Izquierdo Amo&lt;/a&gt;.&lt;/p&gt;
+      &lt;hr /&gt;
+      &lt;!--
+        &lt;p&gt;This page was generated by &lt;a href="https://pages.github.com"&gt;GitHub Pages&lt;/a&gt; using the Architect theme by &lt;a href="https://twitter.com/jasonlong"&gt;Jason Long&lt;/a&gt;.&lt;/p&gt;
+      --&gt;
+    &lt;/aside&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>
+</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/noeliamansog/Prueba">Prueba del titulo del proyecto</a> is maintained by <a href="https://github.com/noeliamansog">noeliamansog</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
